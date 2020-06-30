@@ -10,9 +10,9 @@ const ExperienceItem = ({ items }) => {
       position: string
       location: string
       description: string
-    }) => {
+    }, idx:number) => {
       return (
-        <div className="c-timeline__item">
+        <div key={idx} className="c-timeline__item">
           <div className="c-timeline__point  t-timeline__point  t-primary-bg"></div>
           <div className="o-content">
             <div className="o-grid">
@@ -62,7 +62,7 @@ const Experiences = () => {
         <div className="o-section__container">
           <header className="o-section__header  t-section__header">
             <div className="o-content">
-              <h2 className="o-section__heading">Experience</h2>
+              <h2 className="o-section__heading">Work</h2>
               <div className="o-content__body  o-section__description">
                 Yes. I've been around.
               </div>

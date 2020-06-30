@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const ExpertiseItem = ({ items }) => {
   return items.map((item: {title:string, description:string}, idx:number):JSX.Element => (
-    <div className="o-grid__col-sm-6">
+    <div key={idx} className="o-grid__col-sm-6">
       <div className="o-media  o-media--block  o-content in-view">
         <div className="o-media__figure">
           <div className="c-number  t-primary-color">0{idx+1}</div>
@@ -41,7 +41,7 @@ const Expertise = () => {
         <div className="o-section__container">
           <header className="o-section__header  t-section__header">
             <div className="o-content">
-              <h2 className="o-section__heading">Expertise</h2>
+              <h2 className="o-section__heading">Competency</h2>
               <div className="o-content__body  o-section__description">
                 Batman would be jealous.
               </div>

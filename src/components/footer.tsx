@@ -15,10 +15,21 @@ const Footer = () => {
           header {
             location
             phone
-            web
-            email
+            web {
+              title
+              url
+            }
+            email {
+              title
+              url
+            }
             firstname
             lastname
+            social {
+              facebook
+              dribble
+              twitter
+            }
           }
         }
       }
@@ -66,11 +77,15 @@ const Footer = () => {
                 <div className="o-grid__col-md-3  o-grid__col-sm-6">
                   <div className="o-content">
                     <div className="o-content__body">
-                      <a href="#" target="_blank" className="t-link-container">
+                      <a
+                        href={data.site.siteMetadata.header.web.url}
+                        target="_blank"
+                        className="t-link-container"
+                      >
                         <h4>Web</h4>
                         <p>
                           <span className="t-link-container__item--blended">
-                            {data.site.siteMetadata.header.web}
+                            {data.site.siteMetadata.header.web.title}
                           </span>
                         </p>
                       </a>
@@ -81,11 +96,15 @@ const Footer = () => {
                 <div className="o-grid__col-md-3  o-grid__col-sm-6">
                   <div className="o-content">
                     <div className="o-content__body">
-                      <a href="#" target="_blank" className="t-link-container">
+                      <a
+                        href={"mailto: " + data.site.siteMetadata.header.email.url}
+                        target="_blank"
+                        className="t-link-container"
+                      >
                         <h4>Email</h4>
                         <p>
                           <span className="t-link-container__item--blended">
-                            {data.site.siteMetadata.header.email}
+                            {data.site.siteMetadata.header.email.title}
                           </span>
                         </p>
                       </a>
@@ -104,61 +123,60 @@ const Footer = () => {
                     <div className="o-content__body">
                       <h1 className="c-brand__title  t-title">
                         <span className="c-brand__sizer  c-brand__sizer--sm">
-                          <span
-                            className="a-footer  c-brand__first-word  t-title__first-word in-view"
-                            data-sr-id="15"
-                          >
-                            {data.site.siteMetadata.header.firstname}
+                          <span className="a-footer  c-brand__first-word  t-title__first-word in-view">
+                            호연{data.site.siteMetadata.header.firstname}
                           </span>
-                          <span
-                            className="a-footer  c-brand__second-word  t-title__second-word in-view"
-                            data-sr-id="16"
-                          >
-                            {data.site.siteMetadata.header.lastname}
+                          <span className="a-footer  c-brand__second-word  t-title__second-word in-view">
+                            {data.site.siteMetadata.header.lastname}황
                           </span>
                         </span>
                       </h1>
                     </div>
                   </div>
                 </div>
-
                 <ul className="c-footer__social-buttons  c-social-buttons  o-content__body">
-                  <li className="a-footer in-view" data-sr-id="17">
-                    <a
-                      href="https://www.facebook.com/RuvenThemes/"
-                      target="_blank"
-                      className="c-social-button  t-social-button"
-                    >
-                      <FontAwesomeIcon
-                        icon={faFacebookF}
-                        className="in-view fa-lg fab"
-                      />
-                    </a>
-                  </li>
-                  <li className="a-footer in-view" data-sr-id="18">
-                    <a
-                      href="https://dribbble.com/"
-                      target="_blank"
-                      className="c-social-button  t-social-button"
-                    >
-                      <FontAwesomeIcon
-                        icon={faDribbble}
-                        className="in-view fa-lg fab"
-                      />
-                    </a>
-                  </li>
-                  <li className="a-footer in-view" data-sr-id="19">
-                    <a
-                      href="https://twitter.com/_Ruven"
-                      target="_blank"
-                      className="c-social-button  t-social-button"
-                    >
-                      <FontAwesomeIcon
-                        icon={faTwitter}
-                        className="in-view fa-lg fab"
-                      />
-                    </a>
-                  </li>
+                  {data.site.siteMetadata.header.social.facebook && (
+                    <li className="a-footer in-view">
+                      <a
+                        href={data.site.siteMetadata.header.social.facebook}
+                        target="_blank"
+                        className="c-social-button  t-social-button"
+                      >
+                        <FontAwesomeIcon
+                          icon={faFacebookF}
+                          className="in-view fa-lg fab"
+                        />
+                      </a>
+                    </li>
+                  )}
+                  {data.site.siteMetadata.header.social.dribble && (
+                    <li className="a-footer in-view">
+                      <a
+                        href={data.site.siteMetadata.header.social.dribble}
+                        target="_blank"
+                        className="c-social-button  t-social-button"
+                      >
+                        <FontAwesomeIcon
+                          icon={faDribbble}
+                          className="in-view fa-lg fab"
+                        />
+                      </a>
+                    </li>
+                  )}
+                  {data.site.siteMetadata.header.social.twitter && (
+                    <li className="a-footer in-view">
+                      <a
+                        href={data.site.siteMetadata.header.social.twitter}
+                        target="_blank"
+                        className="c-social-button  t-social-button"
+                      >
+                        <FontAwesomeIcon
+                          icon={faTwitter}
+                          className="in-view fa-lg fab"
+                        />
+                      </a>
+                    </li>
+                  )}
                 </ul>
               </div>
             </div>

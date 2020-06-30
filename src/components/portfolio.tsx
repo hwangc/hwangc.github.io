@@ -7,9 +7,9 @@ const PortfolioItem = ({ items }) => {
     title: string,
     description: string,
     image: string
-  }) => {
+  }, idx:number) => {
     return (
-      <div className="o-grid__col-sm-6">
+      <div key={idx} className="o-grid__col-sm-6">
         <a
           className="c-image-overlay  t-image-overlay  js-lightbox"
           href={item.url}

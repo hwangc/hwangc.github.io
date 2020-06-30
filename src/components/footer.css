@@ -1,9 +1,0 @@
-.a-footer {
-  visibility: visible;
-  -webkit-transform: scale(1);
-  opacity: 1;
-  transform: scale(1);
-  opacity: 1;
-  -webkit-transition: -webkit-transform 1.5s ease 0s, opacity 1.5s ease 0s;
-  transition: transform 1.5s ease 0s, opacity 1.5s ease 0s;
-}

@@ -10,9 +10,9 @@ const EducationItem = ({ items }) => {
       position: string
       location: string
       description: string
-    }) => {
+    }, idx:number) => {
       return (
-        <div className="c-timeline__item">
+        <div key={idx} className="c-timeline__item">
           <div className="c-timeline__point  t-timeline__point  t-primary-bg"></div>
           <div className="o-content">
             <div className="o-grid">
@@ -64,7 +64,7 @@ const Education = () => {
             <div className="o-content">
               <h2 className="o-section__heading">Education</h2>
               <div className="o-content__body  o-section__description">
-                Yes. I've been around.
+                Lazy isn't in my vocabulary.
               </div>
             </div>
           </header>

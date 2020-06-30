@@ -2,9 +2,9 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 const SkllItem = ({ items }) => {
-  return items.map((item: { score: number; title: string }) => {
+  return items.map((item: { score: number; title: string }, idx: number) => {
     return (
-      <div className="o-grid__col-sm-6">
+      <div key={idx} className="o-grid__col-sm-6">
         <div className="o-content">
           <div className="o-media  o-media--block in-view">
             <div className="o-media__figure">
@@ -21,7 +21,6 @@ const SkllItem = ({ items }) => {
             <div
               className="a-progress-bar  c-progress-bar__filler  t-primary-bg in-view"
               data-percent={item.score}
-              style={{ width: `${item.score}%` }}
             ></div>
           </div>
         </div>

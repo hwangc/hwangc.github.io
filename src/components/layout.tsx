@@ -6,27 +6,30 @@
  */
 
 import React from "react"
+import { Helmet } from "react-helmet"
+import { withPrefix } from "gatsby"
 import PropTypes from "prop-types"
-import Loader from "./loader"
-import Footer from "./footer";
 import "./layout.css"
 
-const Layout = ({ children }): JSX.Element => {
-
+const Layout = ({ children }) => {
   const style: React.CSSProperties = {
-    display: "block" 
+    display: "none",
   }
 
   return (
     <>
-      <Loader />
-      <div
-        className="c-main-container  js-main-container"
-        style={style}
-      >
-        {children}
-      </div>
-      <Footer/>
+      <Helmet>
+        {/* <script
+          src={withPrefix("jquery.min.js")}
+          type="text/javascript"
+          defer
+        /> */}
+        {/* <script src={withPrefix("nivo-lightbox.min.js")} type="text/javascript" defer /> */}
+        {/* <script src={withPrefix("dense.js")} type="text/javascript" defer />
+        <script src={withPrefix("scrollreveal.min.js")} type="text/javascript" defer/>
+        <script src={withPrefix("main.js")} type="text/javascript" defer /> */}
+      </Helmet>
+      <div className="c-main-container js-main-container" style={style}>{children}</div>
     </>
   )
 }
