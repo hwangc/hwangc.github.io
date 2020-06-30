@@ -1,0 +1,9 @@
+.a-header {
+  visibility: visible;
+  -webkit-transform: translateY(0) scale(1);
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 1.2s ease 0.7s, opacity 1.2s ease 0.7s;
+  transition: transform 1.2s ease 0.7s, opacity 1.2s ease 0.7s;
+}
