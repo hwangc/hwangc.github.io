@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -9,6 +8,8 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Name from "../components/name"
+import Contact from "../components/contact"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -16,19 +17,7 @@ const Header = () => {
       site {
         siteMetadata {
           header {
-            firstname
-            lastname
             occupation
-            location
-            phone
-            web {
-              title
-              url
-            }
-            email {
-              title
-              url
-            }
             social {
               facebook
               dribble
@@ -38,7 +27,7 @@ const Header = () => {
           }
         }
       }
-      file(relativePath: { eq: "david_face_2.png" }) {
+      file(relativePath: { eq: "profile/david.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -73,16 +62,7 @@ const Header = () => {
                 <div className="c-header__top">
                   <div className="c-header__brand">
                     <div className="c-brand">
-                      <h1 className="c-brand__title  t-title">
-                        <span className="c-brand__sizer">
-                          <span className="a-header  c-brand__first-word  t-title__first-word in-view">
-                            호연{data.site.siteMetadata.header.firstname}
-                          </span>
-                          <span className="a-header  c-brand__second-word  t-title__second-word in-view">
-                            {data.site.siteMetadata.header.lastname}황
-                          </span>
-                        </span>
-                      </h1>
+                      <Name customClass="a-header" />
                       <h2 className="a-header  c-brand__sub-title  t-sub-title in-view">
                         <span className="c-brand__sizer">
                           {data.site.siteMetadata.header.occupation}
@@ -137,65 +117,7 @@ const Header = () => {
                 </div>
                 <div className="c-header__contact">
                   <hr className="a-header  c-header__contact-divider in-view" />
-                  <div className="o-grid">
-                    <div className="o-grid__col-md-3  o-grid__col-sm-6">
-                      <div className="a-header  o-content in-view">
-                        <div className="o-content__body">
-                          <h4>Location</h4>
-                          <address>
-                            {data.site.siteMetadata.header.location}
-                          </address>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="o-grid__col-md-3  o-grid__col-sm-6">
-                      <div className="a-header  o-content in-view">
-                        <div className="o-content__body">
-                          <h4>Phone</h4>
-                          <p>{data.site.siteMetadata.header.phone}</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="o-grid__col-md-3  o-grid__col-sm-6">
-                      <div className="a-header  o-content in-view">
-                        <div className="o-content__body">
-                          <a
-                            href={data.site.siteMetadata.header.web.url}
-                            target="_blank"
-                            className="t-link-container"
-                          >
-                            <h4>Web</h4>
-                            <p>
-                              <span className="t-link-container__item--blended">
-                                {data.site.siteMetadata.header.web.title}
-                              </span>
-                            </p>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="o-grid__col-md-3  o-grid__col-sm-6">
-                      <div className="a-header  o-content in-view">
-                        <div className="o-content__body">
-                          <a
-                            href={
-                              "mailto: " +
-                              data.site.siteMetadata.header.email.url
-                            }
-                            target="_blank"
-                            className="t-link-container"
-                          >
-                            <h4>Email</h4>
-                            <p>
-                              <span className="t-link-container__item--blended">
-                                {data.site.siteMetadata.header.email.title}
-                              </span>
-                            </p>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <Contact customClass="a-header in-view" />
                 </div>
               </div>
             </div>

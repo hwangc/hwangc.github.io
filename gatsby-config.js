@@ -4,13 +4,13 @@ module.exports = {
     description: `Fullstack Developer / Future Machine Learning Engineer`,
     author: `@hwangc`,
     header: {
-      firstname: `HoYean`,
-      lastname: `Hwang`,
+      firstname: { en: `HoYean`, ko: `호연` },
+      lastname: { en: `Hwang`, ko: `황` },
       occupation: `Web Developer`,
       location: `서울특별시 강북구`,
       phone: `010.9128.4858`,
       web: { title: `hwangc.github.io`, url: `https://hwangc.github.io` },
-      email: { title: `alwaysmile4u`, url: `alwaysmile4u@gmail.com` },
+      email: { title: `alwaysmile4u`, url: `mailto: alwaysmile4u@gmail.com` },
       social: {
         facebook: ``,
         dribble: ``,
@@ -227,7 +227,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/profile/david.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -9,10 +9,10 @@ import React from "react"
 
 export const onRenderBody = ({ setPostBodyComponents }) => {
   setPostBodyComponents([
-    <script key="jquery.js" src="jquery.min.js" defer />,
-    <script key="dense.js" src="dense.js" defer />,
-    <script key="nivo.js" src="nivo-lightbox.min.js" defer />,
-    <script key="scrollreveal.js" src="scrollreveal.min.js" defer />,
-    <script key="main.js" src="main.js" defer />,
+    <script key="jquery.js" src="asset/vendor/jquery.min.js" defer />,
+    <script key="dense.js" src="asset/vendor/dense.js" defer />,
+    <script key="nivo.js" src="asset/vendor/nivo-lightbox.min.js" defer />,
+    <script key="scrollreveal.js" src="asset/vendor/scrollreveal.min.js" defer />,
+    <script key="main.js" src="asset/js/main.js" defer />,
   ])
 }

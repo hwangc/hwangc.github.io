@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("html").addClass("js-enabled")
 
-  $(window).load(function () {
+  // $(window).load(function () {
     setTimeout(() => {
       $(".js-preloader").hide(function () {
         $(".js-main-container").show()
@@ -12,8 +12,8 @@ $(document).ready(function () {
         setup_scrollreveal()
         setup_progress_bar_animation()
       })
-    }, 400)
-  })
+    }, 1000)
+  // })
 })
 
 function setup_progress_bar_animation() {
@@ -65,7 +65,7 @@ function setup_scrollreveal() {
     window.sr = ScrollReveal()
 
     var default_config = {
-      duration: 500,
+      duration: 200,
       delay: 0,
       easing: "ease",
       scale: 1,
@@ -73,7 +73,7 @@ function setup_scrollreveal() {
     }
     var header_config = $.extend(false, default_config, {
       duration: 1200,
-      delay: 700,
+      delay: 0,
     })
     var footer_config = $.extend(false, default_config, {
       duration: 1500,
