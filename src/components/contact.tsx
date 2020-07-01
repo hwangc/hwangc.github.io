@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const Contact = ({ customClass }: { customClass: string }) => {
   const data = useStaticQuery(graphql`
-    query BaseInfo {
+    query ContactInfo {
       site {
         siteMetadata {
           header {
