@@ -1,3 +1,6 @@
 .c-avatar__img {
   margin: 0 auto;
 }
+.particleBG canvas {
+  z-index: 3 !important;
+}

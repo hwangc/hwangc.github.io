@@ -24,8 +24,7 @@ const EducationItem = ({ items }) => {
                 <h4 className="c-work__title">{item.position}</h4>
                 <div className="c-work__location">{item.location}</div>
               </div>
-              <div className="o-grid__col-md-7">
-                <p>{item.description}</p>
+              <div className="o-grid__col-md-7" dangerouslySetInnerHTML={{ __html:item.description }}>
               </div>
             </div>
           </div>
