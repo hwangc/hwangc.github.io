@@ -10,7 +10,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Name from "../components/name"
 import Contact from "../components/contact"
-import ParticlesBg from "particles-bg"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -40,10 +39,6 @@ const Header = () => {
 
   return (
     <section className="o-section o-section--header  t-section  t-section--header">
-      <div className="particleBG">
-        <ParticlesBg type="square" num={1} bg={true}
-        />
-      </div>
       <div className="c-header">
         <div className="o-section__header-bg  t-section__header"></div>
         <div className="o-section__content-bg  t-section__content"></div>

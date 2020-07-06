@@ -7,6 +7,7 @@ import Expertise from "../components/expertise"
 import Skills from "../components/skills"
 import Experience from "../components/experience"
 import Education from "../components/education"
+import Certificate from "../components/certificate"
 import Awards from "../components/awards"
 import Portfolio from "../components/portfolio"
 import Footer from "../components/footer"
@@ -23,6 +24,7 @@ const IndexPage = (): JSX.Element => (
       <Skills />
       <Experience />
       <Education />
+      <Certificate />
       <Awards />
       <Portfolio />
       <Footer />

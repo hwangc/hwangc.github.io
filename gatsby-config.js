@@ -66,16 +66,20 @@ module.exports = {
         title: "PHP",
       },
       {
+        score: 60,
+        title: "Python",
+      },
+      {
         score: 55,
         title: "SQL",
       },
       {
         score: 55,
-        title: "C++",
+        title: "C/C++",
       },
       {
-        score: 55,
-        title: "C",
+        score: 50,
+        title: "Shell",
       },
       {
         score: 60,
@@ -85,15 +89,11 @@ module.exports = {
         score: 50,
         title: "Docker",
       },
-      {
-        score: 50,
-        title: "Shell",
-      },
     ],
     experience: [
       {
-        start: `2019-11`,
-        end: `2020-06`,
+        start: `2019-11-19`,
+        end: `2020-06-19`,
         title: `깃컴퍼니`,
         position: `Full-stack web developer`,
         location: `서울시 논현동`,
@@ -102,8 +102,8 @@ module.exports = {
         WordPress / WooCommerce / PHP / HTML / CSS / Javascript / jQuery / Docker / MySql`,
       },
       {
-        start: `2017-07`,
-        end: `2019-10`,
+        start: `2017-07-10`,
+        end: `2019-10-10`,
         title: `PPBSTUDIOS`,
         position: `Full-stack web developer`,
         location: `서울시 성동구`,
@@ -111,8 +111,8 @@ module.exports = {
         PHP / Express / React / HTML / CSS / Javascript / jQuery / Docker / MySql`,
       },
       {
-        start: `2011-05`,
-        end: `2016-08`,
+        start: `2011-05-01`,
+        end: `2016-08-11`,
         title: `워드프레스마켓`,
         position: `WordPress web developer/educator`,
         location: `서울시 강북구`,
@@ -120,8 +120,8 @@ module.exports = {
         WordPress / PHP / HTML / CSS / Javascript / jQuery / MySql`,
       },
       {
-        start: `2009-01`,
-        end: `2011-03`,
+        start: `2009-01-01`,
+        end: `2011-03-31`,
         title: `모토로라 코리아`,
         position: `Sales/Marketing Assistant Manager`,
         location: `서울시 강남구`,
@@ -129,8 +129,8 @@ module.exports = {
         Microsoft Office Tools`,
       },
       {
-        start: `2005-12`,
-        end: `2008-12`,
+        start: `2005-12-19`,
+        end: `2008-12-31`,
         title: `모토로라 코리아`,
         position: `Software Developer`,
         location: `서울시 강남구`,
@@ -160,6 +160,32 @@ module.exports = {
         3.46 / 4.5`,
       },
     ],
+    certificates: [
+      {
+        title: `Data Visualization`,
+        time: `2018-09`,
+        url: `https://www.coursera.org/account/accomplishments/certificate/SAM7F6QWJ4PV`,
+        institue: `Coursera`,
+      },
+      {
+        title: `Text Retrieval and Search Engines`,
+        time: `2018-11`,
+        url: `https://www.coursera.org/account/accomplishments/certificate/N8DPF542JV4F`,
+        institue: `Coursera`,
+      },
+      {
+        title: `Mathematics for Machine Learning Specialization`,
+        time: `2019-03`,
+        url: `https://www.coursera.org/account/accomplishments/specialization/certificate/WH63LC3F9K48`,
+        institue: `Coursera`,
+      },
+      {
+        title: `Neural Networks and Deep Learning`,
+        time: `2019-06`,
+        url: `https://www.coursera.org/account/accomplishments/certificate/TUUDHGJETXVH`,
+        institue: `Coursera`,
+      },
+    ],
     awards: [
       {
         title: `SDS 멀티캠퍼스 - 효율적이고 확장가능한 빅데이터 전문가 과정`,
@@ -173,7 +199,7 @@ module.exports = {
       },
       {
         title: `SK Telecom 인턴`,
-        time: `2002`,
+        time: `2002-06-29 ~ 2002-08-03`,
         description: `Internship at University of Washington`,
       },
     ],
