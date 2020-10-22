@@ -2,18 +2,17 @@ $(document).ready(function () {
   $("html").addClass("js-enabled")
 
   // $(window).load(function () {
-    setTimeout(() => {
-      $(".js-preloader").hide(function () {
-        $(".js-main-container").show()
+  setTimeout(() => {
+    $(".js-preloader").hide(function () {
+      $(".js-main-container").show()
 
-        setup_nivo_lightbox()
-        setup_dense()
+      setup_nivo_lightbox()
+      setup_dense()
 
-        setup_scrollreveal()
-        setup_progress_bar_animation()
-      })
-    }, 1000)
-  // })
+      setup_scrollreveal()
+      setup_progress_bar_animation()
+    })
+  }, 1000)
 })
 
 function setup_progress_bar_animation() {

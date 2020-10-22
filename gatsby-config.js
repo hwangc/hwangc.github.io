@@ -6,7 +6,7 @@ module.exports = {
     header: {
       firstname: { en: `HoYean`, ko: `호연` },
       lastname: { en: `Hwang`, ko: `황` },
-      occupation: `Web Developer`,
+      occupation: `Web Developer / Future ML Engineer`,
       location: `서울특별시 강북구`,
       phone: `010.xxxx.4858`,
       web: { title: `hwangc.github.io`, url: `https://hwangc.github.io` },
@@ -66,16 +66,20 @@ module.exports = {
         title: "PHP",
       },
       {
+        score: 60,
+        title: "Python",
+      },
+      {
         score: 55,
         title: "SQL",
       },
       {
         score: 55,
-        title: "C++",
+        title: "C/C++",
       },
       {
-        score: 55,
-        title: "C",
+        score: 50,
+        title: "Shell",
       },
       {
         score: 60,
@@ -85,51 +89,53 @@ module.exports = {
         score: 50,
         title: "Docker",
       },
-      {
-        score: 50,
-        title: "Shell",
-      },
     ],
     experience: [
       {
-        start: `2019-11`,
-        end: `2020-06`,
+        start: `2019-11-19`,
+        end: `2020-06-19`,
         title: `깃컴퍼니`,
         position: `Full-stack web developer`,
         location: `서울시 논현동`,
-        description: `Develop WordPress & WooCommerce powered e-commerce website at front-end and back-end`,
+        description: `Develop WordPress & WooCommerce powered e-commerce website at front-end and back-end.
+        <hr/>
+        WordPress / WooCommerce / PHP / HTML / CSS / Javascript / jQuery / Docker / MySql`,
       },
       {
-        start: `2017-07`,
-        end: `2019-10`,
+        start: `2017-07-10`,
+        end: `2019-10-10`,
         title: `PPBSTUDIOS`,
         position: `Full-stack web developer`,
         location: `서울시 성동구`,
-        description: `Develop e-commerce and backoffice websites to increase the productivity and efficiency to boost up sales.`,
+        description: `Develop e-commerce and backoffice websites to increase the productivity and efficiency to boost up sales.<hr/>
+        PHP / Express / React / HTML / CSS / Javascript / jQuery / Docker / MySql`,
       },
       {
-        start: `2011-05`,
-        end: `2016-08`,
+        start: `2011-05-01`,
+        end: `2016-08-11`,
         title: `워드프레스마켓`,
         position: `WordPress web developer/educator`,
         location: `서울시 강북구`,
-        description: `Develop WordPress themes and plugins & teach people about operating WordPress sites`,
+        description: `Develop WordPress themes and plugins & teach people about operating WordPress sites.<hr/>
+        WordPress / PHP / HTML / CSS / Javascript / jQuery / MySql`,
       },
       {
-        start: `2009-01`,
-        end: `2011-03`,
+        start: `2009-01-01`,
+        end: `2011-03-31`,
         title: `모토로라 코리아`,
         position: `Sales/Marketing Assistant Manager`,
         location: `서울시 강남구`,
-        description: `Sell Motorola companion products to wholesalers and support their marketing plans.`,
+        description: `Sell Motorola companion products to wholesalers and support their marketing plans.<hr/>
+        Microsoft Office Tools`,
       },
       {
-        start: `2005-12`,
-        end: `2008-12`,
+        start: `2005-12-19`,
+        end: `2008-12-31`,
         title: `모토로라 코리아`,
         position: `Software Developer`,
         location: `서울시 강남구`,
-        description: `Develop Motorola mobile applications for Chinese market`,
+        description: `Develop Motorola mobile applications for Chinese market.<hr/>
+        C / C++`,
       },
     ],
     education: [
@@ -139,7 +145,10 @@ module.exports = {
         title: `Georgia Institute of Technology`,
         position: `Online Master of Science in Computer Science`,
         location: `Atlanta, GA`,
-        description: `Graduate Intro to OS, High Performance Computer Architecture 이수`,
+        description: `&#8208; Machine Learning Specialization Course<br/>&#8226; Graduate Intro to OS 이수<br/>
+        &#8226; High Performance Computer Architecture 이수<br/>
+        4 / 4
+        `,
       },
       {
         start: `1998-03`,
@@ -147,8 +156,34 @@ module.exports = {
         title: `INHA UNIVERSITY`,
         position: `Bachelor of Information and Communication Engineering`,
         location: `Incheon`,
-        description: `자료구조론, 객체지향프로그래밍, 컴퓨터그래픽스, 통신이론 등 이수 / 교환학생 Circuit Analysis, Digital Systems, Data Structure and Algorithms 등 이수
-`,
+        description: `&#8226; 공업수학, 신호 및 시스템, 전자기학, 전자회로, 자료구조론, 객체지향프로그래밍, 회로이론, 광자공학, 컴퓨터그래픽스/실습, 통신이론/실습 등 이수<br/>
+        3.46 / 4.5`,
+      },
+    ],
+    certificates: [
+      {
+        title: `Data Visualization`,
+        time: `2018-09`,
+        url: `https://www.coursera.org/account/accomplishments/certificate/SAM7F6QWJ4PV`,
+        institue: `Coursera`,
+      },
+      {
+        title: `Text Retrieval and Search Engines`,
+        time: `2018-11`,
+        url: `https://www.coursera.org/account/accomplishments/certificate/N8DPF542JV4F`,
+        institue: `Coursera`,
+      },
+      {
+        title: `Mathematics for Machine Learning Specialization`,
+        time: `2019-03`,
+        url: `https://www.coursera.org/account/accomplishments/specialization/certificate/WH63LC3F9K48`,
+        institue: `Coursera`,
+      },
+      {
+        title: `Neural Networks and Deep Learning`,
+        time: `2019-06`,
+        url: `https://www.coursera.org/account/accomplishments/certificate/TUUDHGJETXVH`,
+        institue: `Coursera`,
       },
     ],
     awards: [
@@ -164,7 +199,7 @@ module.exports = {
       },
       {
         title: `SK Telecom 인턴`,
-        time: `2002`,
+        time: `2002-06-29 ~ 2002-08-03`,
         description: `Internship at University of Washington`,
       },
     ],
