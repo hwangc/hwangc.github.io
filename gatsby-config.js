@@ -8,9 +8,9 @@ module.exports = {
       lastname: { en: `Hwang`, ko: `황` },
       occupation: `Web Developer`,
       location: `서울특별시 강북구`,
-      phone: `010.9128.4858`,
+      phone: `010.xxxx.4858`,
       web: { title: `hwangc.github.io`, url: `https://hwangc.github.io` },
-      email: { title: `alwaysmile4u`, url: `mailto: alwaysmile4u@gmail.com` },
+      email: { title: `xxxxxsmile4u`, url: `mailto: xxxxxsmile4u@gmail.com` },
       social: {
         facebook: ``,
         dribble: ``,
